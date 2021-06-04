@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you must love me</title>
+    <script>
+        function loveYou () {
+            alert('Me too <3')
+        }
+        function hateYou () {
+            let x = Math.round(Math.random()*window.innerWidth);
+            let y = Math.round(Math.random()*window.innerHeight);
+            document.getElementById('btNo').style.left = x + 'px';
+            document.getElementById('btNo').style.top = y + 'px';
+
+        }
+
+    </script>
+</head>
+<style>
+    button {
+        background-color: cornflowerblue;
+        color: aliceblue;
+    }
+    body {
+        background-color: deeppink;
+    }
+    h2 {
+        color: chartreuse;
+    }
+</style>
+<body>
+<h2 style="position: absolute; left: 300px;top:200px ">Do you love me?</h2>
+<button style="position: absolute; left: 340px;top:300px " onclick="loveYou()">Yes</button>
+<button style="position: absolute; left: 400px;top:300px " onmouseover="hateYou()" id="btNo">No</button>
+</body>
+
+</html>
